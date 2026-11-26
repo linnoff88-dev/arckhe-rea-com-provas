@@ -1,7 +1,7 @@
 # Provas — painel de agentes (exemplo ilustrativo)
 
 > Exemplo de provas.md que REPROVA no conferidor. É o que o agente costuma entregar
-> quando ninguém pede a prova: soa convincente e não mostra nada.
+> quando ninguém pede a prova: soa convincente e nêo mostra nada.
 > `python3 confere_provas.py exemplos/provas-ruim.md` → REPROVADO.
 
 ## Alvo

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>REA com provas — refaça um app sem a IA chutar</title>
-<meta name="description" content="Kit aberto: 4 regras, 3 construções prontas (painel de agentes, reator de leads, site refeito) e um conferidor que reprova o arquivo de provas quando a IA não mostra de onde tirou a conclusão.">
+<meta name="description" content="Kit aberto: 4 regras, 3 construções prontas (painel de agentes, reator de leads, site refeito) e um conferidor que reprova o arquivo de provas quando a IA nêo mostra de onde tirou a conclusêo.">
 <link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/rea-com-provas/guia/">
 <link rel="alternate" hreflang="en" href="https://inematds.github.io/rea-com-provas/guia/en/">
 <link rel="alternate" hreflang="es" href="https://inematds.github.io/rea-com-provas/guia/es/">
@@ -153,7 +153,7 @@
 
 <section id="resumo" class="resumo"><div class="wrap">
   <span class="chip">Em resumo</span>
-  <p>O <strong>REA com provas</strong> é um kit aberto e gratuito para quem usa um agente de IA (Claude Code, Codex ou o harness dsh) para estudar um app e fazer a própria versão. REA vem de <em>Reverse Engineer Anything</em>, uma ferramenta aberta de engenharia reversa: entender como um programa foi feito olhando o que já está pronto. O problema: o agente diz que entendeu como o app funciona e inventa o que não viu. O kit traz 4 regras, 3 pedidos prontos (painel de agentes, reator de leads e site refeito) e um conferidor em Python que reprova o arquivo de provas quando falta prova. Para usar, você precisa de Python 3 e de um agente de IA no terminal.</p>
+  <p>O <strong>REA com provas</strong> é um kit aberto e gratuito para quem usa um agente de IA (Claude Code, Codex ou o harness dsh) para estudar um app e fazer a própria versêo. REA vem de <em>Reverse Engineer Anything</em>, uma ferramenta aberta de engenharia reversa: entender como um programa foi feito olhando o que já está pronto. O problema: o agente diz que entendeu como o app funciona e inventa o que nêo viu. O kit traz 4 regras, 3 pedidos prontos (painel de agentes, reator de leads e site refeito) e um conferidor em Python que reprova o arquivo de provas quando falta prova. Para usar, você precisa de Python 3 e de um agente de IA no terminal.</p>
 </div></section>
 
 <section id="video" style="padding:34px 0 0"><div class="wrap">
@@ -168,8 +168,8 @@
   <div class="warn" role="note">
     <h3>⚠️ Segurança e licença — leia antes</h3>
     <ul>
-      <li><strong>Só software seu ou open source cuja licença deixa estudar</strong> (MIT, Apache-2.0, BSD, GPL, MPL…). App fechado de outra empresa: não use este método nele.</li>
-      <li><strong>Estudar não é copiar.</strong> A sua versão é escrita do zero, com seu nome, seus textos e seu visual. Nada de levar arquivos, ícones ou marca.</li>
+      <li><strong>Só software seu ou open source cuja licença deixa estudar</strong> (MIT, Apache-2.0, BSD, GPL, MPL…). App fechado de outra empresa: nêo use este método nele.</li>
+      <li><strong>Estudar nêo é copiar.</strong> A sua versêo é escrita do zero, com seu nome, seus textos e seu visual. Nada de levar arquivos, ícones ou marca.</li>
       <li>Licença GPL/AGPL: se reaproveitar qualquer trecho, siga as condições dela. Na dúvida, leve só a ideia.</li>
       <li>Rode o agente numa pasta separada, sem senhas, chaves ou dados de clientes. O kit só lê e escreve arquivos na pasta do trabalho; nada é enviado, apagado ou publicado sozinho.</li>
     </ul>
@@ -188,14 +188,14 @@
       <pre data-tr style="margin-top:12px">C1. O app usa uma arquitetura moderna
     baseada em microsserviços.
     Confiança: alta</pre>
-      <p>Soa bem. Você não tem como conferir. Às vezes é verdade, às vezes é chute.</p>
+      <p>Soa bem. Você nêo tem como conferir. Às vezes é verdade, às vezes é chute.</p>
     </div>
     <div class="card">
       <span class="tag ok">✓ Com prova</span>
-      <pre data-tr style="margin-top:12px">C1. Cada agente é um cartão numa grade
+      <pre data-tr style="margin-top:12px">C1. Cada agente é um cartêo numa grade
 - Prova: `src/components/AgentGrid.tsx:12-48`
 - Trecho: `repeat(auto-fill, minmax(280px, 1fr))`</pre>
-      <p>Você abre o arquivo na linha 12 e vê. Se não estiver lá, o agente errou.</p>
+      <p>Você abre o arquivo na linha 12 e vê. Se nêo estiver lá, o agente errou.</p>
     </div>
   </div>
 </div></section>
@@ -205,9 +205,9 @@
   <h2>O método inteiro cabe em quatro regras</h2>
   <p class="sub">Cole-as junto com qualquer pedido de "estuda esse app e faz o meu".</p>
   <div class="grid g4">
-    <div class="card"><div class="num">1</div><h3>Peça o provas.md</h3><p>Cada conclusão com o arquivo e o trecho que a prova, mais a seção "O que NÃO deu para provar".</p></div>
-    <div class="card"><div class="num">2</div><h3>Foco no código do app</h3><p>Mande ignorar node_modules, vendor e site-packages. Provar com biblioteca é explicar a biblioteca, não o app.</p></div>
-    <div class="card"><div class="num">3</div><h3>Só o que é seu ou aberto</h3><p>Software seu ou open source com licença que deixa estudar. Depois, a SUA versão, com seu nome e visual.</p></div>
+    <div class="card"><div class="num">1</div><h3>Peça o provas.md</h3><p>Cada conclusêo com o arquivo e o trecho que a prova, mais a seçêo "O que NêO deu para provar".</p></div>
+    <div class="card"><div class="num">2</div><h3>Foco no código do app</h3><p>Mande ignorar node_modules, vendor e site-packages. Provar com biblioteca é explicar a biblioteca, nêo o app.</p></div>
+    <div class="card"><div class="num">3</div><h3>Só o que é seu ou aberto</h3><p>Software seu ou open source com licença que deixa estudar. Depois, a SUA versêo, com seu nome e visual.</p></div>
     <div class="card"><div class="num">4</div><h3>Descreva o visual</h3><p>Cores com código, fontes, movimento e densidade num brief de design. É o que separa painel feio de tela boa.</p></div>
   </div>
 </div></section>
@@ -223,22 +223,22 @@
     <span>confere_provas.py</span><span class="arr">→</span>
     <span>APROVADO?</span><span class="arr">→</span>
     <span>Brief de design</span><span class="arr">→</span>
-    <span>A sua versão</span>
+    <span>A sua versêo</span>
   </div>
 </div></section>
 
 <section id="construcoes"><div class="wrap">
   <span class="chip">3 construções prontas</span>
   <h2>Três pedidos para colar no agente</h2>
-  <p class="sub">Em português, com [colchetes] onde você troca pelo seu caso. Funcionam no Claude Code, no Codex ou no harness dsh. Os agentes das construções são simulados: nada chama IA, API ou manda mensagem de verdade.</p>
+  <p class="sub">Em português, com [colchetes] onde você troca pelo seu caso. Funcionam no Claude Code, no Codex ou no harness dsh. Os agentes das construções sêo simulados: nada chama IA, API ou manda mensagem de verdade.</p>
   <div class="grid g3">
     <div class="card"><h3>🧩 A · Painel de agentes</h3><p>Estuda como um app open source mostra vários agentes lado a lado e constrói um painel com 6 agentes vivos para um negócio.</p>
-      <ul><li>Exemplo: clínica odontológica — captação, caixa de entrada, SEO, agenda, suporte, relatórios</li><li>Cada cartão diz o que o agente faz e o estado (com rótulo, não só cor)</li><li>Caixa de comando que manda a tarefa ao agente certo</li></ul>
+      <ul><li>Exemplo: clínica odontológica — captaçêo, caixa de entrada, SEO, agenda, suporte, relatórios</li><li>Cada cartêo diz o que o agente faz e o estado (com rótulo, nêo só cor)</li><li>Caixa de comando que manda a tarefa ao agente certo</li></ul>
       <p style="margin-top:.8em"><a href="https://github.com/inematds/rea-com-provas/blob/main/prompts/a-painel-de-agentes.md" target="_blank" rel="noopener">prompts/a-painel-de-agentes.md</a></p></div>
     <div class="card"><h3>⚡ B · Reator de leads</h3><p>Estuda como um app open source divide um pedido em tarefas para agentes trabalhadores e constrói o fluxo de leads.</p>
-      <ul><li>Lead entra → qualificar → responder → agendar → acompanhar (4 raias)</li><li>Lead que não qualifica sai com o motivo escrito</li><li>Comemora na tela quando o lead agenda</li></ul>
+      <ul><li>Lead entra → qualificar → responder → agendar → acompanhar (4 raias)</li><li>Lead que nêo qualifica sai com o motivo escrito</li><li>Comemora na tela quando o lead agenda</li></ul>
       <p style="margin-top:.8em"><a href="https://github.com/inematds/rea-com-provas/blob/main/prompts/b-reator-de-leads.md" target="_blank" rel="noopener">prompts/b-reator-de-leads.md</a></p></div>
-    <div class="card"><h3>🌐 C · Site refeito</h3><p>Mapeia o SEU site (seções, fontes, scripts, botões) e refaz numa versão premium com as suas palavras.</p>
+    <div class="card"><h3>🌐 C · Site refeito</h3><p>Mapeia o SEU site (seções, fontes, scripts, botões) e refaz numa versêo premium com as suas palavras.</p>
       <ul><li>Jeito 1: salvar a página com <code>curl</code>, sem instalar nada</li><li>Jeito 2: o REA olha a página aberta num Chrome local</li><li>Mesmos botões e destinos; sem inventar preço ou promessa</li></ul>
       <p style="margin-top:.8em"><a href="https://github.com/inematds/rea-com-provas/blob/main/prompts/c-site-refeito.md" target="_blank" rel="noopener">prompts/c-site-refeito.md</a></p></div>
   </div>
@@ -247,12 +247,12 @@
 <section id="conferidor"><div class="wrap">
   <span class="chip">O conferidor</span>
   <h2>confere_provas.py reprova o chute</h2>
-  <p class="sub">Um arquivo Python, só biblioteca padrão, sem internet. Lê o provas.md e devolve nota de 0 a 10, APROVADO ou REPROVADO e a lista do que falta. Sai com código 0 (aprovado), 1 (reprovado) ou 2 (não conseguiu ler).</p>
+  <p class="sub">Um arquivo Python, só biblioteca padrêo, sem internet. Lê o provas.md e devolve nota de 0 a 10, APROVADO ou REPROVADO e a lista do que falta. Sai com código 0 (aprovado), 1 (reprovado) ou 2 (nêo conseguiu ler).</p>
   <div class="grid g2">
     <div class="card"><h3>Reprova quando</h3>
-      <ul><li>falta a seção "O que NÃO deu para provar" (ou ela está vazia);</li><li>uma conclusão não cita arquivo/trecho (ex.: <code>src/arquivo.ts:40-62</code>);</li><li>todas as referências apontam para bibliotecas (node_modules, vendor, site-packages, dist, build, arquivos .min.js…).</li></ul></div>
+      <ul><li>falta a seçêo "O que NêO deu para provar" (ou ela está vazia);</li><li>uma conclusêo nêo cita arquivo/trecho (ex.: <code>src/arquivo.ts:40-62</code>);</li><li>todas as referências apontam para bibliotecas (node_modules, vendor, site-packages, dist, build, arquivos .min.js…).</li></ul></div>
     <div class="card"><h3>Avisa (sem reprovar) quando</h3>
-      <ul><li>a prova não diz a linha;</li><li>uma conclusão só cita biblioteca, mas outras citam o app;</li><li>falta a linha "Licença:" na seção "Alvo";</li><li>o título ainda tem [colchetes] do modelo.</li></ul></div>
+      <ul><li>a prova nêo diz a linha;</li><li>uma conclusêo só cita biblioteca, mas outras citam o app;</li><li>falta a linha "Licença:" na seçêo "Alvo";</li><li>o título ainda tem [colchetes] do modelo.</li></ul></div>
   </div>
   <p class="sub" style="margin:1.6em 0 .8em">O exemplo ruim do repositório, conferido (o conferidor responde em português):</p>
 <pre><span class="k">python3 confere_provas.py exemplos/provas-ruim.md</span>
@@ -260,12 +260,12 @@
 Conclusões: 4 · com prova no código do app: 0
 
 O que falta (reprova):
-  ✗ Falta a seção "## O que NÃO deu para provar". Peça ao agente: "liste o que você acha mas não achou no código".
-  ✗ "C1. O app usa uma arquitetura moderna baseada em microsserviços": conclusão sem prova. Falta o arquivo/trecho (ex.: `src/arquivo.ts:40-62`).
-  ✗ "C4. Dá para refazer tudo em uma tarde": conclusão sem prova. Falta o arquivo/trecho (ex.: `src/arquivo.ts:40-62`).
+  ✗ Falta a seçêo "## O que NêO deu para provar". Peça ao agente: "liste o que você acha mas nêo achou no código".
+  ✗ "C1. O app usa uma arquitetura moderna baseada em microsserviços": conclusêo sem prova. Falta o arquivo/trecho (ex.: `src/arquivo.ts:40-62`).
+  ✗ "C4. Dá para refazer tudo em uma tarde": conclusêo sem prova. Falta o arquivo/trecho (ex.: `src/arquivo.ts:40-62`).
   ✗ Todas as referências apontam para bibliotecas (node_modules, vendor, site-packages...). Mande o agente ignorar essas pastas e provar no código do app.
 
-Avisos (não reprova, mas melhore):
+Avisos (nêo reprova, mas melhore):
   ! "C2. A grade de agentes é feita com uma biblioteca de layout": só cita biblioteca embutida; mostre onde o PRÓPRIO app usa isso.
   ! "C3. As animações deixam a experiência fluida e profissional": só cita biblioteca embutida; mostre onde o PRÓPRIO app usa isso.
   ! Sem a linha "Licença:" em "## Alvo". Confira se você pode estudar esse app.</pre>
@@ -279,13 +279,13 @@ Avisos (não reprova, mas melhore):
   <div class="grid g3">
     <div class="card"><h3>Python 3.8 ou mais novo</h3><p>Para o conferidor e os testes. Confira:</p><pre>python3 --version</pre></div>
     <div class="card"><h3>Um agente de IA no terminal</h3><p>Claude Code, Codex ou o harness dsh (um agente de código que roda no seu computador). Qualquer um que leia arquivos e rode comandos na pasta.</p></div>
-    <div class="card"><h3>REA (opcional)</h3><p>A instalação do REA, do harness e de um modelo aberto está em outro guia, passo a passo:</p><p style="margin-top:.6em"><a href="https://inematds.github.io/rea-sem-travas/guia/" target="_blank" rel="noopener">REA sem travas — guia de instalação →</a></p></div>
+    <div class="card"><h3>REA (opcional)</h3><p>A instalaçêo do REA, do harness e de um modelo aberto está em outro guia, passo a passo:</p><p style="margin-top:.6em"><a href="https://inematds.github.io/rea-sem-travas/guia/" target="_blank" rel="noopener">REA sem travas — guia de instalaçêo →</a></p></div>
   </div>
 </div></section>
 
 <section id="guia"><div class="wrap">
   <span class="chip">Passo a passo</span>
-  <h2>Do zero até a sua versão</h2>
+  <h2>Do zero até a sua versêo</h2>
   <p class="sub">Comandos para Linux, Mac ou WSL. No Windows sem WSL, troque <code>python3</code> por <code>py</code>.</p>
 
   <div class="step"><div class="b">1</div><div>
@@ -301,12 +301,12 @@ Avisos (não reprova, mas melhore):
     <h3>Escolha o alvo e confira a licença</h3>
     <p>Um app open source (baixe o código) ou o seu próprio site. Abra o arquivo de licença antes de qualquer coisa.</p>
 <pre><span class="k">git clone https://github.com/[dono]/[app-open-source].git ~/estudo/app</span>
-<span class="k">cat ~/estudo/app/LICENSE</span>   <span class="c"># MIT, Apache-2.0, BSD, GPL…? então pode estudar</span></pre>
+<span class="k">cat ~/estudo/app/LICENSE</span>   <span class="c"># MIT, Apache-2.0, BSD, GPL…? entêo pode estudar</span></pre>
   </div></div>
 
   <div class="step"><div class="b">3</div><div>
     <h3>Preencha o brief de design</h3>
-    <p>Copie o modelo e troque os [colchetes]: cores com código, fontes, movimento e densidade. O modelo já traz um exemplo preenchido no padrão INEMA.</p>
+    <p>Copie o modelo e troque os [colchetes]: cores com código, fontes, movimento e densidade. O modelo já traz um exemplo preenchido no padrêo INEMA.</p>
 <pre><span class="k">cp brief/MODELO-brief-design.md ~/estudo/brief.md</span></pre>
   </div></div>
 
@@ -326,7 +326,7 @@ Avisos (não reprova, mas melhore):
   </div></div>
 
   <div class="step"><div class="b">6</div><div>
-    <h3>Libere a construção</h3>
+    <h3>Libere a construçêo</h3>
     <p>Só com APROVADO. Escreva no agente:</p>
 <pre>pode construir</pre>
     <p>No fim, ele diz como abrir, o que ficou de fora e o que precisa de teste manual.</p>
@@ -335,19 +335,19 @@ Avisos (não reprova, mas melhore):
 
 <section id="rodada"><div class="wrap">
   <span class="chip">Teste real</span>
-  <h2>O site inema.club refeito pela construção C</h2>
-  <p class="sub">Em 08/11/2026 rodamos a construção C (jeito 1, sem REA) no Claude Code, pela assinatura, com o inema.club no papel de "seu site". As duas fases rodaram de uma vez, sem intervenção. Números medidos.</p>
+  <h2>O site inema.club refeito pela construçêo C</h2>
+  <p class="sub">Em 08/11/2026 rodamos a construçêo C (jeito 1, sem REA) no Claude Code, pela assinatura, com o inema.club no papel de "seu site". As duas fases rodaram de uma vez, sem intervençêo. Números medidos.</p>
   <div class="grid g4" style="margin-bottom:22px">
     <div class="card"><div class="num">23</div><h3>conclusões</h3><p>Cada uma com linha do HTML salvo e trecho copiado.</p></div>
     <div class="card"><div class="num">10</div><h3>nota do conferidor</h3><p>NOTA 10/10 — APROVADO, com as 23 conclusões provadas no código da página.</p></div>
-    <div class="card"><div class="num">4/4</div><h3>provas conferidas à mão</h3><p>Abrimos 4 linhas citadas (72, 113, 144, 161): o trecho estava lá.</p></div>
+    <div class="card"><div class="num">4/4</div><h3>provas conferidas à mêo</h3><p>Abrimos 4 linhas citadas (72, 113, 144, 161): o trecho estava lá.</p></div>
     <div class="card"><div class="num">7:52</div><h3>minutos, as 2 fases</h3><p>472 s e 42 turnos do agente. Saiu um index.html de 94 KB, sem rolagem lateral em 390 px e 1440 px.</p></div>
   </div>
   <div class="ex">
     <figure><img src="assets/rodada-site-original-1440.jpg" alt="Site inema.club como estava em 08/11/2026" loading="lazy"><figcaption>Antes: o site no ar em 08/11/2026.</figcaption></figure>
-    <figure><img src="assets/rodada-versao-nova-1440.jpg" alt="Versão premium feita pela construção C seguindo o brief de design" loading="lazy"><figcaption>Depois: a versão da fase 2, com o brief do padrão INEMA (fundo #0c0c10, amarelo #FACC15, Sora).</figcaption></figure>
+    <figure><img src="assets/rodada-versao-nova-1440.jpg" alt="Versêo premium feita pela construçêo C seguindo o brief de design" loading="lazy"><figcaption>Depois: a versêo da fase 2, com o brief do padrêo INEMA (fundo #0c0c10, amarelo #FACC15, Sora).</figcaption></figure>
   </div>
-  <p class="mut" style="font-size:.92rem;margin-top:16px">O que o próprio agente listou como limite: as fontes e as cores do site original estão num CSS que não foi salvo (só o HTML), e ele não conseguiu abrir o navegador para testar o celular (conferimos depois). Arquivos da rodada no repositório: <a href="https://github.com/inematds/rea-com-provas/tree/main/exemplos/rodada-real" target="_blank" rel="noopener">exemplos/rodada-real</a> (pedido usado, provas.md, HTML salvo e versão nova).</p>
+  <p class="mut" style="font-size:.92rem;margin-top:16px">O que o próprio agente listou como limite: as fontes e as cores do site original estêo num CSS que nêo foi salvo (só o HTML), e ele nêo conseguiu abrir o navegador para testar o celular (conferimos depois). Arquivos da rodada no repositório: <a href="https://github.com/inematds/rea-com-provas/tree/main/exemplos/rodada-real" target="_blank" rel="noopener">exemplos/rodada-real</a> (pedido usado, provas.md, HTML salvo e versêo nova).</p>
   <div class="ex" style="margin-top:18px">
     <figure><img src="assets/conferidor-reprovado.jpg" alt="Conferidor reprovando o exemplo sem provas" loading="lazy"><figcaption>exemplos/provas-ruim.md: NOTA 0/10 — REPROVADO.</figcaption></figure>
     <figure><img src="assets/conferidor-aprovado.jpg" alt="Conferidor aprovando o exemplo com provas" loading="lazy"><figcaption>exemplos/provas-boa.md: NOTA 10/10 — APROVADO.</figcaption></figure>
@@ -363,7 +363,7 @@ Avisos (não reprova, mas melhore):
     <tr><td><code>prompts/</code></td><td>As 3 construções: a-painel-de-agentes, b-reator-de-leads, c-site-refeito.</td></tr>
     <tr><td><code>provas/MODELO-provas.md</code></td><td>O formato do arquivo de provas que o agente tem de entregar.</td></tr>
     <tr><td><code>confere_provas.py</code></td><td>O conferidor: nota, APROVADO/REPROVADO e o que falta.</td></tr>
-    <tr><td><code>brief/MODELO-brief-design.md</code></td><td>Modelo do brief de design, com exemplo preenchido no padrão INEMA.</td></tr>
+    <tr><td><code>brief/MODELO-brief-design.md</code></td><td>Modelo do brief de design, com exemplo preenchido no padrêo INEMA.</td></tr>
     <tr><td><code>exemplos/</code></td><td>provas-boa.md (aprovada), provas-ruim.md (reprovada) e a rodada real.</td></tr>
     <tr><td><code>tests/</code></td><td>Testes do conferidor, sem internet.</td></tr>
   </table></div>
@@ -375,7 +375,7 @@ Avisos (não reprova, mas melhore):
     <p style="margin-top:18px">REA com provas · kit aberto e gratuito ·
       <a href="https://github.com/inematds/rea-com-provas">github.com/inematds/rea-com-provas</a> ·
       <a href="https://inema.club">INEMA.CLUB</a></p>
-    <p style="margin-top:6px">Veja também: <a href="https://inematds.github.io/rea-engenharia-reversa/guia/">o que é o REA</a> · <a href="https://inematds.github.io/rea-sem-travas/guia/">REA sem travas (instalação)</a></p>
+    <p style="margin-top:6px">Veja também: <a href="https://inematds.github.io/rea-engenharia-reversa/guia/">o que é o REA</a> · <a href="https://inematds.github.io/rea-sem-travas/guia/">REA sem travas (instalaçêo)</a></p>
   </div>
 </footer>
 

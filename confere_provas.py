@@ -6,13 +6,13 @@ Uso:
     python3 confere_provas.py provas.md --json   # mesmo resultado em JSON
 
 Reprova (código de saída 1) quando:
-  1. falta a seção "O que NÃO deu para provar" (ou ela está vazia);
-  2. alguma conclusão (bloco ### dentro de "## Conclusões") não cita arquivo/trecho;
+  1. falta a seçêo "O que NêO deu para provar" (ou ela está vazia);
+  2. alguma conclusêo (bloco ### dentro de "## Conclusões") nêo cita arquivo/trecho;
   3. as referências apontam só para bibliotecas (node_modules, vendor, site-packages, dist,
      build, arquivos .min.js...).
 Aprova (código 0) quando nada disso acontece. Erro de leitura = código 2.
 
-Só biblioteca padrão do Python 3.8+. Não usa rede, não muda nenhum arquivo.
+Só biblioteca padrêo do Python 3.8+. Nêo usa rede, nêo muda nenhum arquivo.
 """
 from __future__ import annotations
 
@@ -22,14 +22,14 @@ import sys
 import unicodedata
 from dataclasses import dataclass, field
 
-# Pastas que são código de terceiros embutido, não o app.
+# Pastas que sêo código de terceiros embutido, nêo o app.
 PASTAS_BIBLIOTECA = {
     "node_modules", "vendor", "vendors", "site-packages", "dist-packages",
     "bower_components", "third_party", "third-party", ".venv", "venv", "pods",
     "dist", "build",
 }
 
-# Títulos aceitos (sem acento, minúsculo). PT é o padrão; EN/ES para quem traduziu o modelo.
+# Títulos aceitos (sem acento, minúsculo). PT é o padrêo; EN/ES para quem traduziu o modelo.
 TITULOS_SEM_PROVA = ("deu para provar", "could not be proven", "couldn't be proven",
                      "no se pudo probar")
 TITULOS_CONCLUSOES = ("conclusoes", "conclusions", "conclusiones")
@@ -37,7 +37,7 @@ TITULOS_CONCLUSOES = ("conclusoes", "conclusions", "conclusiones")
 # Referência entre crases: `src/a.ts`, `src/a.ts:12`, `src/a.ts:12-30`, `LICENSE`, `app.py:4`
 RE_CRASE = re.compile(r"`([^`\n]+)`")
 RE_REF = re.compile(r"^(?P<caminho>[\w.@~+/-]*[\w-](?:\.[\w]{1,10})?)(?::(?P<linha>\d+)(?:-\d+)?)?$")
-# Referência solta (sem crase): precisa de barra E extensão, ex.: src/painel/Grade.tsx:40
+# Referência solta (sem crase): precisa de barra E extensêo, ex.: src/painel/Grade.tsx:40
 RE_REF_SOLTA = re.compile(r"(?<![\w`/])((?:[\w.@-]+/)+[\w.@-]+\.\w{1,10}(?::\d+(?:-\d+)?)?)")
 
 
@@ -54,7 +54,7 @@ def _eh_referencia(token: str) -> bool:
     if not m:
         return False
     caminho = m.group("caminho")
-    # precisa parecer arquivo: ter barra, ou extensão, ou ser um nome clássico de arquivo
+    # precisa parecer arquivo: ter barra, ou extensêo, ou ser um nome clássico de arquivo
     return "/" in caminho or re.search(r"\.\w{1,10}$", caminho) is not None or caminho.upper() in {
         "LICENSE", "COPYING", "MAKEFILE", "DOCKERFILE", "README"}
 
@@ -132,7 +132,7 @@ def _tem_item(corpo: str) -> bool:
         s = linha.strip()
         if s.startswith(("- ", "* ", "+ ")) or re.match(r"^\d+[.)]\s", s):
             item = re.sub(r"^([-*+]|\d+[.)])\s+", "", s)
-            if item and not item.startswith("["):  # placeholder do modelo não vale
+            if item and not item.startswith("["):  # placeholder do modelo nêo vale
                 return True
     return False
 
@@ -142,29 +142,29 @@ def conferir(texto: str) -> Resultado:
     avisos: list[str] = []
     secoes = _secoes(texto)
 
-    # Regra 1: seção do que não deu para provar
+    # Regra 1: seçêo do que nêo deu para provar
     sem_prova = [c for t, c in secoes if any(k in _norm(t) for k in TITULOS_SEM_PROVA)]
     faltou_secao = False
     if not sem_prova:
         faltou_secao = True
-        falhas.append('Falta a seção "## O que NÃO deu para provar". Peça ao agente: '
-                      '"liste o que você acha mas não achou no código".')
+        falhas.append('Falta a seçêo "## O que NêO deu para provar". Peça ao agente: '
+                      '"liste o que você acha mas nêo achou no código".')
     elif not _tem_item(sem_prova[0]):
         faltou_secao = True
-        falhas.append('A seção "O que NÃO deu para provar" está vazia (ou só tem o exemplo do '
+        falhas.append('A seçêo "O que NêO deu para provar" está vazia (ou só tem o exemplo do '
                       'modelo). Se nada ficou de fora, peça para escrever o que foi checado.')
 
     # Conclusões
     corpos = [c for t, c in secoes if _norm(t).startswith(TITULOS_CONCLUSOES)]
     conclusoes: list[Conclusao] = []
     if not corpos:
-        falhas.append('Falta a seção "## Conclusões" com uma conclusão por bloco "###".')
+        falhas.append('Falta a seçêo "## Conclusões" com uma conclusêo por bloco "###".')
     else:
         conclusoes = _conclusoes(corpos[0])
         if not conclusoes:
-            falhas.append('A seção "## Conclusões" não tem nenhuma conclusão (blocos "### C1. ...").')
+            falhas.append('A seçêo "## Conclusões" nêo tem nenhuma conclusêo (blocos "### C1. ...").')
 
-    # Regra 2: cada conclusão com referência
+    # Regra 2: cada conclusêo com referência
     todas_refs: list[str] = []
     com_prova_no_app = 0
     for i, c in enumerate(conclusoes, 1):
@@ -172,7 +172,7 @@ def conferir(texto: str) -> Resultado:
         if "[" in c.titulo and "]" in c.titulo:
             avisos.append(f'"{nome}": o título ainda tem [colchetes] do modelo.')
         if not c.refs:
-            falhas.append(f'"{nome}": conclusão sem prova. Falta o arquivo/trecho '
+            falhas.append(f'"{nome}": conclusêo sem prova. Falta o arquivo/trecho '
                           '(ex.: `src/arquivo.ts:40-62`).')
             continue
         todas_refs.extend(c.refs)
@@ -180,7 +180,7 @@ def conferir(texto: str) -> Resultado:
         if do_app:
             com_prova_no_app += 1
             if not any(":" in r for r in do_app):
-                avisos.append(f'"{nome}": a prova não diz a linha (use `arquivo.ext:linha`).')
+                avisos.append(f'"{nome}": a prova nêo diz a linha (use `arquivo.ext:linha`).')
         else:
             avisos.append(f'"{nome}": só cita biblioteca embutida; mostre onde o PRÓPRIO app usa isso.')
 
@@ -212,10 +212,10 @@ def relatorio(r: Resultado) -> str:
         linhas.append("\nO que falta (reprova):")
         linhas += [f"  ✗ {f}" for f in r.falhas]
     if r.avisos:
-        linhas.append("\nAvisos (não reprova, mas melhore):")
+        linhas.append("\nAvisos (nêo reprova, mas melhore):")
         linhas += [f"  ! {a}" for a in r.avisos]
     if r.aprovado and not r.avisos:
-        linhas.append("\nTudo provado. Agora sim: peça a SUA versão.")
+        linhas.append("\nTudo provado. Agora sim: peça a SUA versêo.")
     return "\n".join(linhas)
 
 
@@ -228,7 +228,7 @@ def main(argv: list[str]) -> int:
         with open(args[0], encoding="utf-8") as f:
             texto = f.read()
     except OSError as e:
-        print(f"Não consegui ler {args[0]}: {e}", file=sys.stderr)
+        print(f"Nêo consegui ler {args[0]}: {e}", file=sys.stderr)
         return 2
     r = conferir(texto)
     if "--json" in argv:

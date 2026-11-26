@@ -19,7 +19,7 @@ Complete guide (landing page + step-by-step instructions): **https://inematds.gi
 
 ## The 4 rules
 
-1. **Always request the `provas.md` proof file**: every conclusion must cite the file or excerpt that proves it, along with the "O que NÃO deu para provar" section.
+1. **Always request the `provas.md` proof file**: every conclusion must cite the file or excerpt that proves it, along with the "O que NêO deu para provar" section.
 2. **Focus on the app’s own code**, not bundled libraries (tell the agent to ignore `node_modules`, `vendor`, `site-packages`).
 3. **Use only software you own or open-source software whose license allows studying it.** Then build YOUR own version, with your name and visual design.
 4. **Describe the visual design in detail** (colors, fonts, motion) in a design brief.
@@ -47,7 +47,7 @@ python3 confere_provas.py provas.md          # report in text
 python3 confere_provas.py provas.md --json   # same result in JSON
 ```
 
-It fails (exit code 1) when the "O que NÃO deu para provar" section is missing or empty, when a conclusion does not cite a file or excerpt, or when all references point to libraries (`node_modules`, `vendor`, `site-packages`…). It passes with code 0. If it can’t read the file: code 2.
+It fails (exit code 1) when the "O que NêO deu para provar" section is missing or empty, when a conclusion does not cite a file or excerpt, or when all references point to libraries (`node_modules`, `vendor`, `site-packages`…). It passes with code 0. If it can’t read the file: code 2.
 The checker validates the format; opening 2 or 3 proofs and checking that the excerpt is there is still up to you.
 
 ## The process, from start to finish
@@ -83,7 +83,7 @@ Everything is in [`exemplos/rodada-real/`](exemplos/rodada-real/): the prompt us
 python3 -m unittest discover tests     # or: pytest
 ```
 
-No internet required. They cover: missing "O que NÃO deu para provar" section, empty section, conclusion without a reference, references only in `node_modules`/`vendor`, EN/ES titles, blank template, and both examples via the command line.
+No internet required. They cover: missing "O que NêO deu para provar" section, empty section, conclusion without a reference, references only in `node_modules`/`vendor`, EN/ES titles, blank template, and both examples via the command line.
 
 ## See also
 

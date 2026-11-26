@@ -8,15 +8,15 @@
 
 - App estudado: [nome e endereço do código, ex.: github.com/[dono]/[app]]
 - Licença: [MIT, Apache-2.0, GPL-3.0… e o arquivo onde ela está, ex.: `LICENSE`]
-- Versão / commit: [ex.: v1.4.2 ou commit a1b2c3d]
+- Versêo / commit: [ex.: v1.4.2 ou commit a1b2c3d]
 - Pastas ignoradas: node_modules, vendor, site-packages, dist-packages
 - Pergunta: [o que você quer entender, ex.: "como o app mostra vários agentes lado a lado"]
 
 ## Conclusões
 
-Uma conclusão por bloco `###`. Cada uma precisa de pelo menos UMA prova no código do
+Uma conclusêo por bloco `###`. Cada uma precisa de pelo menos UMA prova no código do
 próprio app: caminho do arquivo entre crases, de preferência com a linha
-(`src/painel/Grade.tsx:40-62`), e o trecho que mostra a conclusão.
+(`src/painel/Grade.tsx:40-62`), e o trecho que mostra a conclusêo.
 
 ### C1. [frase curta: o que o app faz]
 
@@ -24,16 +24,16 @@ próprio app: caminho do arquivo entre crases, de preferência com a linha
 - Trecho: `[3 a 10 palavras copiadas do arquivo]`
 - Confiança: [alta | média | baixa]
 
-### C2. [outra conclusão]
+### C2. [outra conclusêo]
 
 - Prova: `[caminho/do/arquivo.ext:linha]`
 - Trecho: `[trecho]`
 - Confiança: [alta | média | baixa]
 
-## O que NÃO deu para provar
+## O que NêO deu para provar
 
-Tudo o que o agente acha, mas não achou no código. Esta seção é obrigatória.
+Tudo o que o agente acha, mas nêo achou no código. Esta seçêo é obrigatória.
 Se nada ficou de fora, escreva o que foi checado para ter certeza.
 
-- [ex.: não achei onde o app guarda o histórico; pode estar no servidor]
-- [ex.: a animação do cartão parece CSS, mas o arquivo está minificado]
+- [ex.: nêo achei onde o app guarda o histórico; pode estar no servidor]
+- [ex.: a animaçêo do cartêo parece CSS, mas o arquivo está minificado]

@@ -24,7 +24,7 @@ BOM = """# Provas — app
 ### C2. O status vem por evento
 - Prova: `src/status.ts:5`
 
-## O que NÃO deu para provar
+## O que NêO deu para provar
 - Onde o histórico é salvo.
 """
 
@@ -37,10 +37,10 @@ class TestConferidor(unittest.TestCase):
         self.assertEqual(r.conclusoes, 2)
 
     def test_falta_secao_nao_deu_para_provar(self):
-        texto = BOM.split("## O que NÃO deu para provar")[0]
+        texto = BOM.split("## O que NêO deu para provar")[0]
         r = cp.conferir(texto)
         self.assertFalse(r.aprovado)
-        self.assertTrue(any("NÃO deu para provar" in f for f in r.falhas), r.falhas)
+        self.assertTrue(any("NêO deu para provar" in f for f in r.falhas), r.falhas)
         self.assertLessEqual(r.nota, 4)
 
     def test_secao_vazia_reprova(self):
@@ -84,15 +84,15 @@ class TestConferidor(unittest.TestCase):
         self.assertTrue(any("só cita biblioteca" in a for a in r.avisos), r.avisos)
 
     def test_titulo_em_ingles_e_espanhol(self):
-        en = BOM.replace("## O que NÃO deu para provar", "## What could NOT be proven")
-        es = BOM.replace("## O que NÃO deu para provar", "## Lo que NO se pudo probar")
+        en = BOM.replace("## O que NêO deu para provar", "## What could NOT be proven")
+        es = BOM.replace("## O que NêO deu para provar", "## Lo que NO se pudo probar")
         self.assertTrue(cp.conferir(en).aprovado)
         self.assertTrue(cp.conferir(es).aprovado)
 
     def test_modelo_em_branco_reprova(self):
         texto = (RAIZ / "provas" / "MODELO-provas.md").read_text(encoding="utf-8")
         r = cp.conferir(texto)
-        self.assertFalse(r.aprovado, "o modelo sem preencher não pode passar")
+        self.assertFalse(r.aprovado, "o modelo sem preencher nêo pode passar")
 
 
 class TestExemplosPelaLinhaDeComando(unittest.TestCase):
@@ -111,7 +111,7 @@ class TestExemplosPelaLinhaDeComando(unittest.TestCase):
         d = json.loads(p.stdout)
         self.assertFalse(d["aprovado"])
         textos = " ".join(d["falhas"])
-        self.assertIn("NÃO deu para provar", textos)
+        self.assertIn("NêO deu para provar", textos)
         self.assertIn("sem prova", textos)
         self.assertIn("bibliotecas", textos)
 

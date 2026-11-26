@@ -22,7 +22,7 @@ Guía completa (landing + paso a paso): **https://inematds.github.io/rea-com-pro
 
 ## Las 4 reglas
 
-1. **Siempre pide el archivo de pruebas `provas.md`**: cada conclusión debe incluir el archivo o fragmento que la prueba, además de la sección "O que NÃO deu para provar".
+1. **Siempre pide el archivo de pruebas `provas.md`**: cada conclusión debe incluir el archivo o fragmento que la prueba, además de la sección "O que NêO deu para provar".
 2. **Enfócate en el código de la propia app**, no en las bibliotecas integradas (indica que ignore `node_modules`, `vendor`, `site-packages`).
 3. **Solo software propio o de código abierto cuya licencia permita estudiarlo.** Después, construye TU versión, con tu nombre y tu diseño.
 4. **Describe el diseño visual en detalle** (colores, fuentes, movimiento) en un brief de diseño.
@@ -50,7 +50,7 @@ python3 confere_provas.py provas.md          # relatório em texto
 python3 confere_provas.py provas.md --json   # mesmo resultado em JSON
 ```
 
-Rechaza (código de salida 1) cuando falta la sección "O que NÃO deu para provar" (o está vacía),
+Rechaza (código de salida 1) cuando falta la sección "O que NêO deu para provar" (o está vacía),
 cuando una conclusión no cita un archivo o fragmento, o cuando todas las referencias apuntan a
 bibliotecas (`node_modules`, `vendor`, `site-packages`…). Aprueba con código 0. No se pudo leer: código 2.
 El verificador revisa el formato; abrir 2 o 3 pruebas y comprobar que el fragmento esté ahí sigue siendo tu responsabilidad.

@@ -205,7 +205,7 @@
   <h2>Todo el método cabe en cuatro reglas</h2>
   <p class="sub">Pégalas junto con cualquier pedido de "estudia esta app y haz la mía".</p>
   <div class="grid g4">
-    <div class="card"><div class="num">1</div><h3>Pide el provas.md</h3><p>Cada conclusión con el archivo y el fragmento que la prueba, más la sección "O que NÃO deu para provar".</p></div>
+    <div class="card"><div class="num">1</div><h3>Pide el provas.md</h3><p>Cada conclusión con el archivo y el fragmento que la prueba, más la sección "O que NêO deu para provar".</p></div>
     <div class="card"><div class="num">2</div><h3>Enfócate en el código de la app</h3><p>Pide que ignore node_modules, vendor y site-packages. Probarlo con una biblioteca es explicar la biblioteca, no la app.</p></div>
     <div class="card"><div class="num">3</div><h3>Solo lo tuyo o lo abierto</h3><p>Software tuyo o de código abierto con una licencia que permita estudiarlo. Después, TU versión, con tu nombre y aspecto.</p></div>
     <div class="card"><div class="num">4</div><h3>Describe el aspecto visual</h3><p>Colores con código, fuentes, movimiento y densidad en un brief de diseño. Eso es lo que separa un panel feo de una buena pantalla.</p></div>
@@ -250,7 +250,7 @@
   <p class="sub">Un archivo Python, solo con la biblioteca estándar y sin internet. Lee el provas.md y devuelve una nota de 0 a 10, APROVADO o REPROVADO y la lista de lo que falta. Sale con el código 0 (aprobado), 1 (reprobado) o 2 (no se pudo leer).</p>
   <div class="grid g2">
     <div class="card"><h3>Reprueba cuando</h3>
-      <ul><li>falta la sección "O que NÃO deu para provar" (o está vacía);</li><li>una conclusión no cita un archivo o fragmento (por ejemplo: <code>src/arquivo.ts:40-62</code>);</li><li>todas las referencias apuntan a bibliotecas (node_modules, vendor, site-packages, dist, build, archivos .min.js…).</li></ul></div>
+      <ul><li>falta la sección "O que NêO deu para provar" (o está vacía);</li><li>una conclusión no cita un archivo o fragmento (por ejemplo: <code>src/arquivo.ts:40-62</code>);</li><li>todas las referencias apuntan a bibliotecas (node_modules, vendor, site-packages, dist, build, archivos .min.js…).</li></ul></div>
     <div class="card"><h3>Avisa (sin reprobar) cuando</h3>
       <ul><li>la prueba no indica la línea;</li><li>una conclusión solo cita una biblioteca, pero otras citan la app;</li><li>falta la línea "Licença:" en la sección "Alvo";</li><li>el título todavía tiene [corchetes] de la plantilla.</li></ul></div>
   </div>
@@ -260,12 +260,12 @@
 Conclusões: 4 · com prova no código do app: 0
 
 O que falta (reprova):
-  ✗ Falta a seção "## O que NÃO deu para provar". Peça ao agente: "liste o que você acha mas não achou no código".
-  ✗ "C1. O app usa uma arquitetura moderna baseada em microsserviços": conclusão sem prova. Falta o arquivo/trecho (ex.: `src/arquivo.ts:40-62`).
-  ✗ "C4. Dá para refazer tudo em uma tarde": conclusão sem prova. Falta o arquivo/trecho (ex.: `src/arquivo.ts:40-62`).
+  ✗ Falta a seçêo "## O que NêO deu para provar". Peça ao agente: "liste o que você acha mas nêo achou no código".
+  ✗ "C1. O app usa uma arquitetura moderna baseada em microsserviços": conclusêo sem prova. Falta o arquivo/trecho (ex.: `src/arquivo.ts:40-62`).
+  ✗ "C4. Dá para refazer tudo em uma tarde": conclusêo sem prova. Falta o arquivo/trecho (ex.: `src/arquivo.ts:40-62`).
   ✗ Todas as referências apontam para bibliotecas (node_modules, vendor, site-packages...). Mande o agente ignorar essas pastas e provar no código do app.
 
-Avisos (não reprova, mas melhore):
+Avisos (nêo reprova, mas melhore):
   ! "C2. A grade de agentes é feita com uma biblioteca de layout": só cita biblioteca embutida; mostre onde o PRÓPRIO app usa isso.
   ! "C3. As animações deixam a experiência fluida e profissional": só cita biblioteca embutida; mostre onde o PRÓPRIO app usa isso.
   ! Sem a linha "Licença:" em "## Alvo". Confira se você pode estudar esse app.</pre>
