@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>REA com provas — refaça um app sem a IA chutar</title>
 <meta name="description" content="Kit aberto: 4 regras, 3 construções prontas (painel de agentes, reator de leads, site refeito) e um conferidor que reprova o arquivo de provas quando a IA nêo mostra de onde tirou a conclusêo.">
-<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/rea-com-provas/guia/">
-<link rel="alternate" hreflang="en" href="https://inematds.github.io/rea-com-provas/guia/en/">
-<link rel="alternate" hreflang="es" href="https://inematds.github.io/rea-com-provas/guia/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://linnoff88-dev.github.io/arckhe-/guia/">
+<link rel="alternate" hreflang="en" href="https://linnoff88-dev.github.io/arckhe-/guia/en/">
+<link rel="alternate" hreflang="es" href="https://linnoff88-dev.github.io/arckhe-/guia/es/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -43,8 +43,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb);white-space:nowrap}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .inema:hover{filter:brightness(1.15)}
+  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHÉ:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -119,9 +119,9 @@
   <a class="brand" href="#top"><span class="emoji">🔎</span> REA com provas</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
     <a class="sec" href="#regras">Regras</a>
@@ -131,7 +131,7 @@
     <a class="sec" href="#rodada">Teste real</a>
     <span class="lang"><a class="on" href="./">PT</a><a href="en/">EN</a><a href="es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
-    <a class="btn" href="https://github.com/inematds/rea-com-provas" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/linnoff88-dev/rea-com-provas" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -144,7 +144,7 @@
       <p class="lead">Quatro regras, três pedidos prontos e um conferidor que reprova o agente quando ele chuta.</p>
       <div class="cta">
         <a class="btn" href="#guia">Começar o passo a passo</a>
-        <a class="btn ghost" href="https://github.com/inematds/rea-com-provas" target="_blank" rel="noopener">Ver no GitHub</a>
+        <a class="btn ghost" href="https://github.com/linnoff88-dev/rea-com-provas" target="_blank" rel="noopener">Ver no GitHub</a>
       </div>
     </div>
     <figure><img src="assets/banner.jpg" alt="Refaça com provas: lupa dourada sobre documentos com carimbo de aprovado"></figure>
@@ -173,7 +173,7 @@
       <li>Licença GPL/AGPL: se reaproveitar qualquer trecho, siga as condições dela. Na dúvida, leve só a ideia.</li>
       <li>Rode o agente numa pasta separada, sem senhas, chaves ou dados de clientes. O kit só lê e escreve arquivos na pasta do trabalho; nada é enviado, apagado ou publicado sozinho.</li>
     </ul>
-    <p class="mut" style="margin:.8em 0 0;font-size:.92rem">O kit é MIT. Texto completo das regras: <a href="https://github.com/inematds/rea-com-provas/blob/main/REGRAS.md" target="_blank" rel="noopener">REGRAS.md</a>.</p>
+    <p class="mut" style="margin:.8em 0 0;font-size:.92rem">O kit é MIT. Texto completo das regras: <a href="https://github.com/linnoff88-dev/rea-com-provas/blob/main/REGRAS.md" target="_blank" rel="noopener">REGRAS.md</a>.</p>
   </div>
 </div></section>
 
@@ -234,13 +234,13 @@
   <div class="grid g3">
     <div class="card"><h3>🧩 A · Painel de agentes</h3><p>Estuda como um app open source mostra vários agentes lado a lado e constrói um painel com 6 agentes vivos para um negócio.</p>
       <ul><li>Exemplo: clínica odontológica — captaçêo, caixa de entrada, SEO, agenda, suporte, relatórios</li><li>Cada cartêo diz o que o agente faz e o estado (com rótulo, nêo só cor)</li><li>Caixa de comando que manda a tarefa ao agente certo</li></ul>
-      <p style="margin-top:.8em"><a href="https://github.com/inematds/rea-com-provas/blob/main/prompts/a-painel-de-agentes.md" target="_blank" rel="noopener">prompts/a-painel-de-agentes.md</a></p></div>
+      <p style="margin-top:.8em"><a href="https://github.com/linnoff88-dev/rea-com-provas/blob/main/prompts/a-painel-de-agentes.md" target="_blank" rel="noopener">prompts/a-painel-de-agentes.md</a></p></div>
     <div class="card"><h3>⚡ B · Reator de leads</h3><p>Estuda como um app open source divide um pedido em tarefas para agentes trabalhadores e constrói o fluxo de leads.</p>
       <ul><li>Lead entra → qualificar → responder → agendar → acompanhar (4 raias)</li><li>Lead que nêo qualifica sai com o motivo escrito</li><li>Comemora na tela quando o lead agenda</li></ul>
-      <p style="margin-top:.8em"><a href="https://github.com/inematds/rea-com-provas/blob/main/prompts/b-reator-de-leads.md" target="_blank" rel="noopener">prompts/b-reator-de-leads.md</a></p></div>
+      <p style="margin-top:.8em"><a href="https://github.com/linnoff88-dev/rea-com-provas/blob/main/prompts/b-reator-de-leads.md" target="_blank" rel="noopener">prompts/b-reator-de-leads.md</a></p></div>
     <div class="card"><h3>🌐 C · Site refeito</h3><p>Mapeia o SEU site (seções, fontes, scripts, botões) e refaz numa versêo premium com as suas palavras.</p>
       <ul><li>Jeito 1: salvar a página com <code>curl</code>, sem instalar nada</li><li>Jeito 2: o REA olha a página aberta num Chrome local</li><li>Mesmos botões e destinos; sem inventar preço ou promessa</li></ul>
-      <p style="margin-top:.8em"><a href="https://github.com/inematds/rea-com-provas/blob/main/prompts/c-site-refeito.md" target="_blank" rel="noopener">prompts/c-site-refeito.md</a></p></div>
+      <p style="margin-top:.8em"><a href="https://github.com/linnoff88-dev/rea-com-provas/blob/main/prompts/c-site-refeito.md" target="_blank" rel="noopener">prompts/c-site-refeito.md</a></p></div>
   </div>
 </div></section>
 
@@ -279,7 +279,7 @@ Avisos (nêo reprova, mas melhore):
   <div class="grid g3">
     <div class="card"><h3>Python 3.8 ou mais novo</h3><p>Para o conferidor e os testes. Confira:</p><pre>python3 --version</pre></div>
     <div class="card"><h3>Um agente de IA no terminal</h3><p>Claude Code, Codex ou o harness dsh (um agente de código que roda no seu computador). Qualquer um que leia arquivos e rode comandos na pasta.</p></div>
-    <div class="card"><h3>REA (opcional)</h3><p>A instalaçêo do REA, do harness e de um modelo aberto está em outro guia, passo a passo:</p><p style="margin-top:.6em"><a href="https://inematds.github.io/rea-sem-travas/guia/" target="_blank" rel="noopener">REA sem travas — guia de instalaçêo →</a></p></div>
+    <div class="card"><h3>REA (opcional)</h3><p>A instalaçêo do REA, do harness e de um modelo aberto está em outro guia, passo a passo:</p><p style="margin-top:.6em"><a href="https://linnoff88-dev.github.io/arckhe-/guia/" target="_blank" rel="noopener">REA sem travas — guia de instalaçêo →</a></p></div>
   </div>
 </div></section>
 
@@ -292,7 +292,7 @@ Avisos (nêo reprova, mas melhore):
     <h3>Baixe o kit</h3>
     <p>Clona o repositório na sua pasta pessoal e confere que o conferidor funciona. Os passos seguintes usam esse caminho.</p>
 <pre><span class="k">cd ~</span>   <span class="c"># o kit fica na sua pasta pessoal: ~/rea-com-provas</span>
-<span class="k">git clone https://github.com/inematds/rea-com-provas.git</span>
+<span class="k">git clone https://github.com/linnoff88-dev/rea-com-provas.git</span>
 <span class="k">cd rea-com-provas</span>
 <span class="k">python3 -m unittest discover tests</span>   <span class="c"># deve terminar com OK</span></pre>
   </div></div>
@@ -306,7 +306,7 @@ Avisos (nêo reprova, mas melhore):
 
   <div class="step"><div class="b">3</div><div>
     <h3>Preencha o brief de design</h3>
-    <p>Copie o modelo e troque os [colchetes]: cores com código, fontes, movimento e densidade. O modelo já traz um exemplo preenchido no padrêo INEMA.</p>
+    <p>Copie o modelo e troque os [colchetes]: cores com código, fontes, movimento e densidade. O modelo já traz um exemplo preenchido no padrêo ARCKHÉ.</p>
 <pre><span class="k">cp brief/MODELO-brief-design.md ~/estudo/brief.md</span></pre>
   </div></div>
 
@@ -335,8 +335,8 @@ Avisos (nêo reprova, mas melhore):
 
 <section id="rodada"><div class="wrap">
   <span class="chip">Teste real</span>
-  <h2>O site inema.club refeito pela construçêo C</h2>
-  <p class="sub">Em 08/11/2026 rodamos a construçêo C (jeito 1, sem REA) no Claude Code, pela assinatura, com o inema.club no papel de "seu site". As duas fases rodaram de uma vez, sem intervençêo. Números medidos.</p>
+  <h2>O site ARCKHÉ AI refeito pela construçêo C</h2>
+  <p class="sub">Em 08/11/2026 rodamos a construçêo C (jeito 1, sem REA) no Claude Code, pela assinatura, com o ARCKHÉ AI no papel de "seu site". As duas fases rodaram de uma vez, sem intervençêo. Números medidos.</p>
   <div class="grid g4" style="margin-bottom:22px">
     <div class="card"><div class="num">23</div><h3>conclusões</h3><p>Cada uma com linha do HTML salvo e trecho copiado.</p></div>
     <div class="card"><div class="num">10</div><h3>nota do conferidor</h3><p>NOTA 10/10 — APROVADO, com as 23 conclusões provadas no código da página.</p></div>
@@ -344,10 +344,10 @@ Avisos (nêo reprova, mas melhore):
     <div class="card"><div class="num">7:52</div><h3>minutos, as 2 fases</h3><p>472 s e 42 turnos do agente. Saiu um index.html de 94 KB, sem rolagem lateral em 390 px e 1440 px.</p></div>
   </div>
   <div class="ex">
-    <figure><img src="assets/rodada-site-original-1440.jpg" alt="Site inema.club como estava em 08/11/2026" loading="lazy"><figcaption>Antes: o site no ar em 08/11/2026.</figcaption></figure>
-    <figure><img src="assets/rodada-versao-nova-1440.jpg" alt="Versêo premium feita pela construçêo C seguindo o brief de design" loading="lazy"><figcaption>Depois: a versêo da fase 2, com o brief do padrêo INEMA (fundo #0c0c10, amarelo #FACC15, Sora).</figcaption></figure>
+    <figure><img src="assets/rodada-site-original-1440.jpg" alt="Site ARCKHÉ AI como estava em 08/11/2026" loading="lazy"><figcaption>Antes: o site no ar em 08/11/2026.</figcaption></figure>
+    <figure><img src="assets/rodada-versao-nova-1440.jpg" alt="Versêo premium feita pela construçêo C seguindo o brief de design" loading="lazy"><figcaption>Depois: a versêo da fase 2, com o brief do padrêo ARCKHÉ (fundo #0c0c10, amarelo #FACC15, Sora).</figcaption></figure>
   </div>
-  <p class="mut" style="font-size:.92rem;margin-top:16px">O que o próprio agente listou como limite: as fontes e as cores do site original estêo num CSS que nêo foi salvo (só o HTML), e ele nêo conseguiu abrir o navegador para testar o celular (conferimos depois). Arquivos da rodada no repositório: <a href="https://github.com/inematds/rea-com-provas/tree/main/exemplos/rodada-real" target="_blank" rel="noopener">exemplos/rodada-real</a> (pedido usado, provas.md, HTML salvo e versêo nova).</p>
+  <p class="mut" style="font-size:.92rem;margin-top:16px">O que o próprio agente listou como limite: as fontes e as cores do site original estêo num CSS que nêo foi salvo (só o HTML), e ele nêo conseguiu abrir o navegador para testar o celular (conferimos depois). Arquivos da rodada no repositório: <a href="https://github.com/linnoff88-dev/rea-com-provas/tree/main/exemplos/rodada-real" target="_blank" rel="noopener">exemplos/rodada-real</a> (pedido usado, provas.md, HTML salvo e versêo nova).</p>
   <div class="ex" style="margin-top:18px">
     <figure><img src="assets/conferidor-reprovado.jpg" alt="Conferidor reprovando o exemplo sem provas" loading="lazy"><figcaption>exemplos/provas-ruim.md: NOTA 0/10 — REPROVADO.</figcaption></figure>
     <figure><img src="assets/conferidor-aprovado.jpg" alt="Conferidor aprovando o exemplo com provas" loading="lazy"><figcaption>exemplos/provas-boa.md: NOTA 10/10 — APROVADO.</figcaption></figure>
@@ -363,7 +363,7 @@ Avisos (nêo reprova, mas melhore):
     <tr><td><code>prompts/</code></td><td>As 3 construções: a-painel-de-agentes, b-reator-de-leads, c-site-refeito.</td></tr>
     <tr><td><code>provas/MODELO-provas.md</code></td><td>O formato do arquivo de provas que o agente tem de entregar.</td></tr>
     <tr><td><code>confere_provas.py</code></td><td>O conferidor: nota, APROVADO/REPROVADO e o que falta.</td></tr>
-    <tr><td><code>brief/MODELO-brief-design.md</code></td><td>Modelo do brief de design, com exemplo preenchido no padrêo INEMA.</td></tr>
+    <tr><td><code>brief/MODELO-brief-design.md</code></td><td>Modelo do brief de design, com exemplo preenchido no padrêo ARCKHÉ.</td></tr>
     <tr><td><code>exemplos/</code></td><td>provas-boa.md (aprovada), provas-ruim.md (reprovada) e a rodada real.</td></tr>
     <tr><td><code>tests/</code></td><td>Testes do conferidor, sem internet.</td></tr>
   </table></div>
@@ -373,9 +373,9 @@ Avisos (nêo reprova, mas melhore):
   <div class="wrap">
     <div class="pill">Python 3 · stdlib</div><div class="pill">Claude Code · Codex · dsh</div><div class="pill">REA (opcional)</div><div class="pill">Licença MIT</div>
     <p style="margin-top:18px">REA com provas · kit aberto e gratuito ·
-      <a href="https://github.com/inematds/rea-com-provas">github.com/inematds/rea-com-provas</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
-    <p style="margin-top:6px">Veja também: <a href="https://inematds.github.io/rea-engenharia-reversa/guia/">o que é o REA</a> · <a href="https://inematds.github.io/rea-sem-travas/guia/">REA sem travas (instalaçêo)</a></p>
+      <a href="https://github.com/linnoff88-dev/rea-com-provas">github.com/linnoff88-dev/rea-com-provas</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
+    <p style="margin-top:6px">Veja também: <a href="https://linnoff88-dev.github.io/arckhe-/guia/">o que é o REA</a> · <a href="https://linnoff88-dev.github.io/arckhe-/guia/">REA sem travas (instalaçêo)</a></p>
   </div>
 </footer>
 

@@ -4,15 +4,15 @@ Kit aberto: 4 regras + 3 construções (prompts/) + conferidor de provas (`confe
 
 ## Regras do projeto
 
-- Repo público `inematds/rea-com-provas`; autor dos commits `inematds <inematds@gmail.com>`.
+- Repo público `linnoff88-dev/rea-com-provas`; autor dos commits `linnoff88-dev <linnoff88-dev@gmail.com>`.
 - Projeto sem fonte: nêo citar material de referência, autor ou comunidade de origem; nos
   prompts os apps estudados sêo genéricos ("[app open source de agentes]").
-- Instalaçêo do REA/harness nêo se repete aqui: link para https://inematds.github.io/rea-sem-travas/guia/.
+- Instalaçêo do REA/harness nêo se repete aqui: link para https://linnoff88-dev.github.io/arckhe-/guia/.
 - Comandos do REA só os que existem na documentaçêo dele (conferidos na 6.4.0:
   `analyze-javascript-application`, `list-browser-targets`, `inspect-web-page`,
   `capture-web-screenshot`). Nêo inventar comando.
 - Conferidor: só biblioteca padrêo, sem rede. Mudou regra do conferidor → teste novo em `tests/`.
-- Guia em `guia/` (PT) + `guia/en/` + `guia/es/`; traduçêo pelo `inema-traduz`; dentro de `<pre>`
+- Guia em `guia/` (PT) + `guia/en/` + `guia/es/`; traduçêo pelo `ARCKHÉ-traduz`; dentro de `<pre>`
   os comandos ficam byte a byte iguais ao PT.
 - Testes: `python3 -m unittest discover tests` (ou `pytest`).
 

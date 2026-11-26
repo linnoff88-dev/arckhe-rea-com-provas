@@ -11,7 +11,7 @@ tarefas para agentes trabalhadores e constrói o SEU fluxo de leads. Nêo copia 
 pasta e confira a licença (regra 3). Preencha o brief de design (`brief/MODELO-brief-design.md`).
 
 Funciona no Claude Code, no Codex ou no harness dsh (instalaçêo no guia
-https://inematds.github.io/rea-sem-travas/guia/).
+https://linnoff88-dev.github.io/arckhe-/guia/).
 
 ---
 

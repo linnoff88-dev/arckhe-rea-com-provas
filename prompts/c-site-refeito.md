@@ -22,7 +22,7 @@ lê o `site-linhas.html` e cita as linhas dele no provas.md.
 
 ## Jeito 2 — com o REA (vê scripts, rede e a tela de verdade)
 
-Instalaçêo do REA e do harness: guia https://inematds.github.io/rea-sem-travas/guia/.
+Instalaçêo do REA e do harness: guia https://linnoff88-dev.github.io/arckhe-/guia/.
 Abra um Chrome separado, só no seu computador, e peça ao REA para olhar a página:
 
 ```bash

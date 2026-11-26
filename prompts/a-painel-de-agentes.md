@@ -11,7 +11,7 @@ pasta (ex.: `git clone`) e confira a licença (regra 3). Preencha o brief de des
 (`brief/MODELO-brief-design.md`) e deixe-o na mesma pasta.
 
 Funciona no Claude Code, no Codex ou no harness dsh (instalaçêo no guia
-https://inematds.github.io/rea-sem-travas/guia/). Com o REA instalado, o agente também pode usar
+https://linnoff88-dev.github.io/arckhe-/guia/). Com o REA instalado, o agente também pode usar
 `analyze-javascript-application` em apps JavaScript/Electron.
 
 ---

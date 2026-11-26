@@ -1,6 +1,6 @@
 # REA with proof
 
-[![Rebuild with proof](guia/assets/banner-en.jpg)](https://inematds.github.io/rea-com-provas/guia/en/)
+[![Rebuild with proof](guia/assets/banner-en.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/en/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -12,7 +12,7 @@
 
 ## 📖 User guide
 
-Complete guide (landing page + step-by-step instructions): **https://inematds.github.io/rea-com-provas/guia/en/**
+Complete guide (landing page + step-by-step instructions): **https://linnoff88-dev.github.io/arckhe-/guia/en/**
 
 > [!WARNING]
 > **Security and license.** Use this only with **software you own** or **open-source software whose license allows studying it** (MIT, Apache-2.0, BSD, GPL, MPL…). Studying is not copying: your version is written from scratch, with your name, your text, and your visual design. Run the agent in a separate folder, without passwords, keys, or customer data. Details in [REGRAS.md (in Portuguese)](REGRAS.md).
@@ -34,11 +34,11 @@ Complete guide (landing page + step-by-step instructions): **https://inematds.gi
 | [`prompts/c-site-refeito.md`](prompts/c-site-refeito.md) (in Portuguese) | Build C: map YOUR website and rebuild it as a premium version |
 | [`provas/MODELO-provas.md`](provas/MODELO-provas.md) | Proof file format |
 | [`confere_provas.py`](confere_provas.py) | Checker: score 0–10, APROVADO/REPROVADO, and what’s missing |
-| [`brief/MODELO-brief-design.md`](brief/MODELO-brief-design.md) | Design brief with a filled-in example in the INEMA style |
+| [`brief/MODELO-brief-design.md`](brief/MODELO-brief-design.md) | Design brief with a filled-in example in the ARCKHÉ style |
 | [`exemplos/`](exemplos/) | `provas-boa.md` (approved), `provas-ruim.md` (failed), and the real run |
 | [`tests/`](tests/) | Checker tests, no internet required |
 
-The kit is configured with INEMA as the example (design brief in the INEMA style, real run on the inema.club website). Replace the [bracketed text] in the prompts and the design brief with your business details.
+The kit is configured with ARCKHÉ as the example (design brief in the ARCKHÉ style, real run on the ARCKHÉ AI website). Replace the [bracketed text] in the prompts and the design brief with your business details.
 
 ## The checker
 
@@ -56,8 +56,8 @@ Who does what: 🧠 you (with the agent open) · ⚙️ script · 🤖 AI agent 
 
 | # | Step | Command | Who |
 |---|---|---|---|
-| 1 | Download the kit and run the tests | `cd ~ && git clone https://github.com/inematds/rea-com-provas.git && cd rea-com-provas && python3 -m unittest discover tests` | ⚙️ |
-| 2 | (Optional) Install REA + harness | guide https://inematds.github.io/rea-sem-travas/guia/ | 🧠 |
+| 1 | Download the kit and run the tests | `cd ~ && git clone https://github.com/linnoff88-dev/rea-com-provas.git && cd rea-com-provas && python3 -m unittest discover tests` | ⚙️ |
+| 2 | (Optional) Install REA + harness | guide https://linnoff88-dev.github.io/arckhe-/guia/ | 🧠 |
 | 3 | Choose the target and check the license | `cat ~/estudo/app/LICENSE` | 🧠 |
 | 4 | Fill in the design brief | `cp brief/MODELO-brief-design.md ~/estudo/brief.md` | 🧠 |
 | 5 | Paste a build prompt from `prompts/` into the agent (phase 1: study) | `cd ~/estudo && claude` (or `codex`) | 🧠 → 🤖 |
@@ -68,7 +68,7 @@ Who does what: 🧠 you (with the agent open) · ⚙️ script · 🤖 AI agent 
 
 ## Real test (08/11/2026)
 
-Build C ran in Claude Code (through the subscription) with the inema.club website as "your website," method 1 (saved HTML, no REA), phases 1 and 2 in a single run:
+Build C ran in Claude Code (through the subscription) with the ARCKHÉ AI website as "your website," method 1 (saved HTML, no REA), phases 1 and 2 in a single run:
 
 - **23 conclusions** in `provas.md`; checker: **NOTA 10/10 — APROVADO**;
 - **4 out of 4** proofs checked by hand (lines 72, 113, 144, and 161 of the saved HTML) contained the cited excerpt;
@@ -87,9 +87,9 @@ No internet required. They cover: missing "O que NêO deu para provar" section, 
 
 ## See also
 
-- [What is REA](https://inematds.github.io/rea-engenharia-reversa/guia/) — the reverse-engineering tool behind it all.
-- [REA sem travas](https://inematds.github.io/rea-sem-travas/guia/) — install an open model + harness + REA on your computer.
+- [What is REA](https://linnoff88-dev.github.io/arckhe-/guia/) — the reverse-engineering tool behind it all.
+- [REA sem travas](https://linnoff88-dev.github.io/arckhe-/guia/) — install an open model + harness + REA on your computer.
 
 ## License
 
-MIT. Free and open content from [INEMA.CLUB](https://inema.club).
+MIT. Free and open content from [ARCKHÉ AI](https://ARCKHÉ AI).

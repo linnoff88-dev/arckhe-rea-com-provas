@@ -1,6 +1,6 @@
 # REA con pruebas
 
-[![Reconstruya con pruebas](guia/assets/banner-es.jpg)](https://inematds.github.io/rea-com-provas/guia/es/)
+[![Reconstruya con pruebas](guia/assets/banner-es.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/es/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -12,7 +12,7 @@
 
 ## 📖 Guía de uso
 
-Guía completa (landing + paso a paso): **https://inematds.github.io/rea-com-provas/guia/es/**
+Guía completa (landing + paso a paso): **https://linnoff88-dev.github.io/arckhe-/guia/es/**
 
 > [!WARNING]
 > **Seguridad y licencia.** Úsalo solo con **software propio** o **de código abierto cuya licencia permita
@@ -37,11 +37,11 @@ Guía completa (landing + paso a paso): **https://inematds.github.io/rea-com-pro
 | [`prompts/c-site-refeito.md`](prompts/c-site-refeito.md) (en portugués) | Construcción C: mapear TU sitio y reconstruirlo en una versión premium |
 | [`provas/MODELO-provas.md`](provas/MODELO-provas.md) | Formato del archivo de pruebas |
 | [`confere_provas.py`](confere_provas.py) | Verificador: puntuación 0–10, APROVADO/REPROVADO y lo que falta |
-| [`brief/MODELO-brief-design.md`](brief/MODELO-brief-design.md) | Brief de diseño con un ejemplo completo según el estándar INEMA |
+| [`brief/MODELO-brief-design.md`](brief/MODELO-brief-design.md) | Brief de diseño con un ejemplo completo según el estándar ARCKHÉ |
 | [`exemplos/`](exemplos/) | `provas-boa.md` (aprobada), `provas-ruim.md` (reprobada) y la ronda real |
 | [`tests/`](tests/) | Pruebas del verificador, sin internet |
 
-El kit viene configurado con INEMA como ejemplo (brief según el estándar INEMA, ronda real en el sitio inema.club). Reemplaza los [corchetes] de los prompts y el brief por los de tu negocio.
+El kit viene configurado con ARCKHÉ como ejemplo (brief según el estándar ARCKHÉ, ronda real en el sitio ARCKHÉ AI). Reemplaza los [corchetes] de los prompts y el brief por los de tu negocio.
 
 ## El verificador
 
@@ -61,8 +61,8 @@ Quién participa: 🧠 tú (con el agente abierto) · ⚙️ script · 🤖 agen
 
 | # | Paso | Comando | Quién |
 |---|---|---|---|
-| 1 | Descargar el kit y ejecutar las pruebas | `cd ~ && git clone https://github.com/inematds/rea-com-provas.git && cd rea-com-provas && python3 -m unittest discover tests` | ⚙️ |
-| 2 | (Opcional) Instalar REA + harness | guía https://inematds.github.io/rea-sem-travas/guia/ | 🧠 |
+| 1 | Descargar el kit y ejecutar las pruebas | `cd ~ && git clone https://github.com/linnoff88-dev/rea-com-provas.git && cd rea-com-provas && python3 -m unittest discover tests` | ⚙️ |
+| 2 | (Opcional) Instalar REA + harness | guía https://linnoff88-dev.github.io/arckhe-/guia/ | 🧠 |
 | 3 | Elegir el objetivo y revisar la licencia | `cat ~/estudo/app/LICENSE` | 🧠 |
 | 4 | Completar el brief de diseño | `cp brief/MODELO-brief-design.md ~/estudo/brief.md` | 🧠 |
 | 5 | Pegar una construcción de `prompts/` en el agente (fase 1: estudiar) | `cd ~/estudo && claude` (o `codex`) | 🧠 → 🤖 |
@@ -73,7 +73,7 @@ Quién participa: 🧠 tú (con el agente abierto) · ⚙️ script · 🤖 agen
 
 ## Prueba real (08/11/2026)
 
-La construcción C se ejecutó en Claude Code (con la suscripción), con el sitio inema.club en el papel de "tu sitio", método 1 (HTML guardado, sin REA), fases 1 y 2 en una sola sesión:
+La construcción C se ejecutó en Claude Code (con la suscripción), con el sitio ARCKHÉ AI en el papel de "tu sitio", método 1 (HTML guardado, sin REA), fases 1 y 2 en una sola sesión:
 
 - **23 conclusiones** en `provas.md`; verificador: **NOTA 10/10 — APROVADO**;
 - **4 de 4** pruebas abiertas manualmente (líneas 72, 113, 144 y 161 del HTML guardado) tenían el fragmento citado;
@@ -94,9 +94,9 @@ los dos ejemplos ejecutados desde la línea de comandos.
 
 ## Ver también
 
-- [Qué es el REA](https://inematds.github.io/rea-engenharia-reversa/guia/) — la herramienta de ingeniería inversa que está detrás de todo.
-- [REA sin trabas](https://inematds.github.io/rea-sem-travas/guia/) — instalar un modelo abierto + harness + REA en tu computadora.
+- [Qué es el REA](https://linnoff88-dev.github.io/arckhe-/guia/) — la herramienta de ingeniería inversa que está detrás de todo.
+- [REA sin trabas](https://linnoff88-dev.github.io/arckhe-/guia/) — instalar un modelo abierto + harness + REA en tu computadora.
 
 ## Licencia
 
-MIT. Contenido abierto y gratuito de [INEMA.CLUB](https://inema.club).
+MIT. Contenido abierto y gratuito de [ARCKHÉ AI](https://ARCKHÉ AI).

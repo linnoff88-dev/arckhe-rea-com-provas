@@ -1,7 +1,7 @@
 Você vai trabalhar em duas fases. Nêo pule a fase 1.
 
 FASE 1 — MAPEAR COM PROVAS (nêo escreva o site novo ainda)
-Este é o MEU site: https://inema.club. O material salvo está em
+Este é o MEU site: https://ARCKHÉ AI. O material salvo está em
 exemplos/rodada-real (site-linhas.html e, se houver, rea-pagina.json).
 Faça o mapa do site:
 - Seções da página, na ordem, com o título de cada uma.
@@ -12,7 +12,7 @@ Faça o mapa do site:
 - Textos que sêo a minha voz (frases que devem continuar na versêo nova).
 
 Regras do mapa:
-1. Na seçêo "## Alvo" do provas.md escreva "Licença: site próprio de INEMA.CLUB".
+1. Na seçêo "## Alvo" do provas.md escreva "Licença: site próprio de ARCKHÉ AI".
 2. Scripts de terceiros (pixel, chat, analytics, frameworks) sêo biblioteca: anote que
    existem, mas as conclusões sobre o site têm de citar o HTML da página.
 3. Entregue o provas.md no formato de provas/MODELO-provas.md: "## Conclusões" com

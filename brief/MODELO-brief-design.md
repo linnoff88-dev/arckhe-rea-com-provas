@@ -2,7 +2,7 @@
 
 > Regra 4: descreva o visual em detalhe. "Faz bonito" dá painel feio; cor, fonte e
 > movimento escritos dêo tela que dá vontade de usar. Preencha e entregue junto com o prompt.
-> Embaixo do modelo há um exemplo preenchido no padrêo INEMA.
+> Embaixo do modelo há um exemplo preenchido no padrêo ARCKHÉ.
 
 ## Modelo (troque os [colchetes])
 
@@ -36,7 +36,7 @@
 
 ---
 
-## Exemplo preenchido — padrêo INEMA
+## Exemplo preenchido — padrêo ARCKHÉ
 
 ### 1. Sensaçêo
 - Em 3 palavras: escuro, preciso, premium
